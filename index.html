@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+
+  <title>CinemaBrest.by</title>
+
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <img loading="lazy" src="img/logo.png" class="logo__image" width="35" height="35" alt="Логотип Попкорн">
+      <div class="logo__text">CinemaBrest</div>
+    </a>
+    <nav class="nav" title="Главное меню" data-menu>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link" data-menu-item data-scroll>Главная</a></li>
+        <li class="nav__item"><a href="#events" class="nav__link" data-menu-item data-scroll>Мероприятия</a></li>
+        <li class="nav__item"><a href="about.html" class="nav__link" data-menu-item data-scroll>Контакты</a></li>
+      </ul>
+      <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+    </nav>
+
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+
+  </div>
+</header>
+
+<section class="hero fixed">
+  <div class="hero__container">
+    <div class="hero__wrapper">
+      <div class="swiper hero__content">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/cover-1.webp" type="image/webp">
+                <img loading="lazy" src="img/cover-1.jpg" class="hero__imge" alt="Постер1">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Стражи галактики.Часть 3</div>
+                    <div class="hero__text">фантастика 16+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/cover-2.webp" type="image/webp">
+                <img loading="lazy" src="img/cover-2.jpg" class="hero__imge" alt="Постер2">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Фарсаж 10</div>
+                    <div class="hero__text">боевик 16+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/cover-3.webp" type="image/webp">
+                <img loading="lazy" src="img/cover-3.jpg" class="hero__imge" alt="Постер3">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Непосредственно Каха 2</div>
+                    <div class="hero__text">комедия 16+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/cover-4.webp" type="image/webp">
+                <img loading="lazy" src="img/cover-4.jpg" class="hero__imge" alt="Постер4">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Мегалодон</div>
+                    <div class="hero__text">фантастика 16+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/cover-5.webp" type="image/webp">
+                <img loading="lazy" src="img/cover-5.jpg" class="hero__imge" alt="Постер5">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Хитровка</div>
+                    <div class="hero__text">детектив 16+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="hero__item">
+              <picture>
+                <source srcset="img/date-1.webp" type="image/webp">
+                <img loading="lazy" src="img/date-1.jpg" class="hero__imge" alt="Постер6">
+                <div class="hero__card">
+                  <div class="hero__card-poster poster-text">
+                    <div class="hero__title">Три разбойника и лев</div>
+                    <div class="hero__text">Анимация 12+</div>
+                  </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <main class="main">
+      <div class="date">
+  <div class="container-fluid">
+    <div class="tabs" data-tabs="popup">
+      <div class="tabs__menu">
+        <h1 class="tabs__title tabs__text">Афиша</h1>
+        <ul class="list-reset tabs__nav">
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn " type="button">Сегодня</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn " type="button">28 Мая</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn " type="button">29 Мая</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn " type="button">30 Мая</button>
+          </li>
+          <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn " type="button">31 Мая</button>
+          </li>
+        </ul>
+
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <div class="popup-bottom__content">
+              <div class="popup__top">
+                <div class="popup__cover">
+                  <a href="date-1.html" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-1.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-1.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-1">
+                    </picture>
+                    <div class="popup__post">Три разбойника и лев</div>
+                  </a>
+                  <div class="popup__text">78 мин.</div>
+                  <div class="popup__genre">12+/ Анимация</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="date-2.html" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-2.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-2.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-2">
+                    </picture>
+                    <div class="popup__post">Коты Эрмитажа</div>
+                  </a>
+                  <div class="popup__text">83 мин.</div>
+                  <div class="popup__genre">12+/ Анимация</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-3.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-3.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-3">
+                    </picture>
+                    <div class="popup__post">Трио в перьях 2</div>
+                  </a>
+                  <div class="popup__text">84 мин.</div>
+                  <div class="popup__genre">12+/ Мультфильм</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-4.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-4.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-4">
+                    </picture>
+                    <div class="popup__post">Новая игрушка</div>
+                  </a>
+                  <div class="popup__text">112 мин.</div>
+                  <div class="popup__genre">16+/ Комедия</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-5.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-5.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-5">
+                    </picture>
+                    <div class="popup__post">Лигенды Орлёнка</div>
+                  </a>
+                  <div class="popup__text">112 мин.</div>
+                  <div class="popup__genre">12+/ Комедия</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-4.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-4.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-4">
+                    </picture>
+                    <div class="popup__post">Новая игрушка</div>
+                  </a>
+                  <div class="popup__text">112 мин.</div>
+                  <div class="popup__genre">12+/ Комедия</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__panel">
+            <div class="popup-bottom__content">
+              <div class="popup__top">
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-1.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-1.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-1">
+                    </picture>
+                    <div class="popup__post">Три разбойника и лев</div>
+                  </a>
+                  <div class="popup__text">78 мин.</div>
+                  <div class="popup__genre">12+/ Анимация</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-2.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-2.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-2">
+                    </picture>
+                    <div class="popup__post">Коты Эрмитажа</div>
+                  </a>
+                  <div class="popup__text">83 мин.</div>
+                  <div class="popup__genre">12+/ Анимация</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-3.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-3.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-3">
+                    </picture>
+                    <div class="popup__post">Трио в перьях 2</div>
+                  </a>
+                  <div class="popup__text">84 мин.</div>
+                  <div class="popup__genre">12+/ Мультфильм</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-4.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-4.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-4">
+                    </picture>
+                    <div class="popup__post">Новая игрушка</div>
+                  </a>
+                  <div class="popup__text">112 мин.</div>
+                  <div class="popup__genre">16+/ Комедия</div>
+                </div>
+
+                <div class="popup__cover">
+                  <a href="#" class="popup__link">
+                    <picture>
+                      <source srcset="img/tabs-5.webp" type="image/webp">
+                      <img loading="lazy" src="img/tabs-5.jpg" class="popup__image image" width="226" height="320"
+                        alt="tabs-5">
+                    </picture>
+                    <div class="popup__post">Легенды Орлёнка</div>
+                  </a>
+                  <div class="popup__text">112 мин.</div>
+                  <div class="popup__genre">12+/ Комедия</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__panel"></div>
+          <div class="tabs__panel"></div>
+          <div class="tabs__panel"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="programs" id="events">
+  <div class="container-fluid">
+    <div class="programs__wrapper">
+      <div class="swiper programs__content">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="programs__item">
+              <div class="programs__title">
+                <h2 class="programs__events">Программа ЗИМНИХ каникул 2022/23</h2>
+                <div class="programs__text">Кинотеатры города Бреста приглашают провести ЗИМНИЕ каникулы вместе!</div>
+                <button onclick="document.location='programs-1.html'" class="btn-reset btn"
+                  type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source srcset="img/fon-1.webp" type="image/webp">
+                <img loading="lazy" src="img/fon-1.jpg." class="programs__image" width="670" height="450" alt="fon-1">
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="programs__item">
+              <div class="programs__title">
+                <h2 class="programs__events">Программа ОСЕННИХ каникул 2022/23</h2>
+                <div class="programs__text">Кинотеатры города Бреста приглашают провести ОСЕННИЕ каникулы вместе!</div>
+                <button onclick="document.location='programs-2.html'" class="btn-reset btn"
+                  type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source srcset="img/fon-2.webp" type="image/webp">
+                <img loading="lazy" src="img/fon-2.jpg." class="programs__image" width="670" height="450" alt="fon-2">
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="programs__item">
+              <div class="programs__title">
+                <h2 class="programs__events">Приключения одного миньона</h2>
+                <div class="programs__text">Дорогие друзья! Приглашаем вас на игровую программу «Приключения одного
+                  миньона».
+                </div>
+                <button onclick="document.location='programs-3.html'" class="btn-reset btn"
+                  type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source srcset="img/fon-3.webp" type="image/webp">
+                <img loading="lazy" src="img/fon-3.jpg." class="programs__image" width="670" height="450" alt="fon-3">
+              </picture>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn-reset programs-swiper__next swiper-button-next" aria-label="Перейти к предыдущему слайду"></button>
+        <button class="btn-reset programs-swiper__prev swiper-button-prev" aria-label="Перейти к следующему слайду"></button>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__menu">
+      <div class="footer__text">
+        <nav class="footer__nav">
+          <ul class="footer__list list-reset">
+            <li class="footer__item"><a href="#" class="footer__link">Общие правила</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Рекламные услуги</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Правила пользования подарочными <br>
+                сертификатами</a>
+            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Электронные обращения</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__social">
+        <ul class="footer__social-list list-reset">
+          <li class="social__item"><a href="https://www.instagram.com/kinobrest/?hl=ru" target="_blank"
+              class="social__link social__link--in" aria-label="Наша страничка в Инстаграм">Instagram</a></li>
+
+          <li class="social__item"><a href="https://www.tiktok.com/@kinobrest?" target="_blank"
+              class="social__link social__link--tt" aria-label="Наша страничка во Тик ток">TikTok</a></li>
+
+          <li class="social__item"><a href="https://t.me/kinobrest" target="_blank"
+              class="social__link social__link--tl" aria-label="Наша страничка в Телеграм">Telegram</a></li>
+
+          <li class="social__item"><a href="https://www.youtube.com/kinobresta" target="_blank"
+              class="social__link social__link--yb" aria-label="Наша страничка в Ютуб">YouTube</a></li>
+
+          <li class="social__item"><a href="https://www.facebook.com/kinobrestby/" target="_blank"
+              class="social__link social__link--fb" aria-label="Наша страничка в Фейсбуке">Facebook</a></li>
+
+          <li class="social__item"><a href="https://twitter.com/KinoBrestBY" target="_blank"
+              class="social__link social__link--tv" aria-label="Наша страничка в Твитер">Twitter</a></li>
+
+          <li class="social__item"><a href="https://vk.com/kinobrest" target="_blank"
+              class="social__link social__link--vk" aria-label="Наша страничка в Вконтакте">VK</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__title">
+      <p class="footer__information">© 2008-2023 ЛЮБОЕ ИСПОЛЬЗОВАНИЕ МАТЕРИАЛОВ САЙТА РАЗРЕШЕНО ТОЛЬКО С РАЗРЕШЕНИЯ
+        АДМИНИСТРАЦИИ КУП «БРЕСТОБЛКИНОВИДЕОПРОКАТ» РЕГИСТРАЦИОННОЕ СВИДЕТЕЛЬСТВО № 200256943 ОТ 26 АПРЕЛЯ 2006 Г.</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
